@@ -11,10 +11,11 @@
 
 	<main>
         
-        <p>A brief description:</p>
-        <h5 th:text="${reviewModel.description}"></h5>
-
-        <img th:src="${reviewModel.image}">
+        
+		<h5 th:text="${reviewModel.description}"></h5>
+		<img th:src="${reviewModel.image}">
+		
+		<h5 th:text="${reviewModel.marketStatement}"></h5>
 
         <p><a href="/show-reviews">Back to Reviews</a></p>
 	</main>

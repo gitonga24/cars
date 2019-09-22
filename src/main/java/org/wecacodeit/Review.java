@@ -6,6 +6,7 @@ public class Review {
 	private String name;
 	private String description;
 	private String image;
+	private String marketStatement;
 	
 	public Long getId() {
 		return id;
@@ -23,12 +24,19 @@ public class Review {
 		return image;
 	}
 	
-	public Review(long id, String name, String description, String image, String string4, String string5) {
+		public String getMarketStatement() {
+		return marketStatement;
+	}
+		
+	public Review(long id, String name, String description, String image, String marketStatement) {
 		this.id = id;
 		this.name = name;
 		this.description = description;
 		this.image = image;
+		this.marketStatement = marketStatement;
 	}
+
+
 
 
 }
