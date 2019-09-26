@@ -6,16 +6,33 @@
 <body>
 
 	<header>
+	
+		
+		
 		<h3 th:text="${reviewModel.name}">A Review</h3>
+	
 	</header>
 
 	<main>
         
         
-		<h5 th:text="${reviewModel.description}"></h5>
+        <p> 
+        <font size = "3" th:text="${reviewModel.description}"></font>
+        </p>
 		<img th:src="${reviewModel.image}">
 		
-		<h5 th:text="${reviewModel.marketStatement}"></h5>
+		<p>
+		Description:
+		</p>
+		
+		<p>
+		<font size = "3" th:text="${reviewModel.marketStatement}"></font>
+		</p>
+		
+		<p>
+		Price: <font size = "4" th:text="${reviewModel.price}"></font>
+		</p>
+		
 
         <p><a href="/show-reviews">Back to Reviews</a></p>
 	</main>

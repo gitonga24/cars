@@ -18,8 +18,8 @@ public class ReviewRepositoryTest {
 	@Resource
 	private ReviewRepository underTest;
 	
-	private Review reviewOne = new Review(1L, "BMW", "Decription", "image url", "Review");
-	private Review reviewTwo = new Review(2L, "Honda", "Decription", "image url", "Review");
+	private Review reviewOne = new Review(1L, "BMW", "Decription", "image url", "Review", "price");
+	private Review reviewTwo = new Review(2L, "Honda", "Decription", "image url", "Review", "price1");
 	
 	
 	@Test
